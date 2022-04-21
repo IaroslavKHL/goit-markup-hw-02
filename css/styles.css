@@ -1,7 +1,18 @@
 :root {
     --primary-font-family: 'Roboto', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --primary-white-color: #ffffff;
+    --accent-color: #2196F3;
+}
 
+body {
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
 }
 .link {
     text-decoration: none;
@@ -10,70 +21,71 @@
 .list {
     list-style: none;
 }
-body {
-    font-family: var(--primary-font-family);
-}
-.hero {
-    color: #2F303A;
-}
-.team {
-    color: #F5F4FA;
-}
-.footer {
-    color: #2F303A
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* ============= COMPONENTS ============= */
-
+.logo {
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #212121;
+}
+.accent {
+    color:#2196F3;
+}
 .modal-btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-}
-.modal-btn {
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
 }
-.menu-item {
+.menu-item .mailbox .phonenumb {
    font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
-.menu-item:hover,
-.menu-item:focus {
-    background-color: #ffffff;
-    color: #2196F3;
-}
-.mailbox {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-}
-.mailbox:hover,
-.mailbox:focus {
-    background-color: #ffffff;
-    color: #2196F3;
-}
-.phonenumb {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
+
+.mailbox .phonenumb {
     color: #757575;
 }
 .phonenumb:hover,
-.phonenumb:focus {
+.phonenumb:focus
+.menu-item:hover,
+.menu-item:focus,
+.mailbox:hover,
+.mailbox:focus,
+.current {
     background-color: #ffffff;
     color: #2196F3;
 }
+
+.current {
+    color:#2196F3;
+}
 /* ============= HERO ============= */
+.hero {
+    background-color: #2F303A;
+}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -85,17 +97,13 @@ body {
 }
 .benefits-item {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 .benefits-description {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: #757575;
 }
 .section-name {
@@ -103,7 +111,6 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
 }
 .member-name {
@@ -111,7 +118,6 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
 }
 .member-description {
@@ -119,30 +125,34 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #757575;
 }
 /* ============= Footer ============= */
-.map {
+.footer {
+    background-color:#2F303A;
+}
+.connection {
+    font-style: normal;
+}
+.map .second-phonenumb .second-mailbox {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+.map {
     color: #FFFFFF;
 }
-.second-mailbox {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+
+.second-mailbox:hover,
+.second-mailbox:focus,
+.second-phonenumb:hover,
+.second-phonenumb:focus,{
+    color: var(--accent-color);
 }
-.second-phonenumb {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+
+.footer .logo {
+    color: #ffffff;
 }
 /* ============= PORTFOLIO ============= */
 .project-name {
@@ -156,6 +166,24 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: #757575;
+}
+.portfolio-btn {
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border: none;
+    color:#212121;
+    padding: 6px 22px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+background-color:var(--accent-color);
+color:var(--primary-white-color);
+}
+.portfolio-btn .current {
+background-color:var(--accent-color);
+color:var(--primary-white-color);
 }
