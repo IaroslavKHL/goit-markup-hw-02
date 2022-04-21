@@ -1,0 +1,161 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+
+}
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+body {
+    font-family: var(--primary-font-family);
+}
+.hero {
+    color: #2F303A;
+}
+.team {
+    color: #F5F4FA;
+}
+.footer {
+    color: #2F303A
+}
+/* ============= COMPONENTS ============= */
+
+.modal-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.modal-btn {
+    cursor: pointer;
+}
+.menu-item {
+   font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.menu-item:hover,
+.menu-item:focus {
+    background-color: #ffffff;
+    color: #2196F3;
+}
+.mailbox {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.mailbox:hover,
+.mailbox:focus {
+    background-color: #ffffff;
+    color: #2196F3;
+}
+.phonenumb {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+    color: #757575;
+}
+.phonenumb:hover,
+.phonenumb:focus {
+    background-color: #ffffff;
+    color: #2196F3;
+}
+/* ============= HERO ============= */
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.benefits-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.benefits-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.section-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.member-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ============= Footer ============= */
+.map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.second-mailbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.second-phonenumb {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ============= PORTFOLIO ============= */
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.project-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
